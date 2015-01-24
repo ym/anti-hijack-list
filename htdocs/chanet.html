@@ -1,0 +1,8 @@
+<script>
+window.location.search.split('&').forEach(function (param) {
+  param = param.split('=');
+  if(param[0] == 'url') {
+    window.location.replace(decodeURIComponent(param[1]));
+  }
+});
+</script>
