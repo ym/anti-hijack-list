@@ -20,6 +20,10 @@ anti-hijack-list
 
 如果您的局域网内有可以运行 nginx 的服务器，请把 `155.254.49.43` 替换为您服务器的 IP 地址。
 
+- `openwrt/hijack.conf` 用于在 OpenWRT 上重定向劫持所用 IP 的 iptables 规则，由 [hieixu](https://github.com/hieixu) 提供
+
+如果您的局域网内有可以运行 nginx 的服务器，请把 `155.254.49.43` 替换为您服务器的 IP 地址。
+
 使用
 ====
 
