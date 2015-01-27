@@ -2,5 +2,9 @@
 var params = window.location.search.split('&')
   , to     = decodeURIComponent(params[params.length - 1]);
 
+if(to.indexOf('://') == -1) {
+	to = "http://" + to;
+}
+
 window.location.replace(to);
 </script>
