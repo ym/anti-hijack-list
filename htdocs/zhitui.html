@@ -2,7 +2,12 @@
 window.location.search.split('&').forEach(function (param) {
   param = param.split('=');
   if(param[0] == 'url') {
-    window.location.replace(decodeURIComponent(param[1]));
+  	var to = decodeURIComponent(param[1]);
+
+  	if(to.indexOf('://') == -1) {
+		to = "http://" + to;
+	}
+    window.location.replace(to);
   }
 });
 </script>
